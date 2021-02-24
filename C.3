@@ -1,0 +1,21 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+void print(int n)
+{
+	if (n>9)
+	{
+//		n = n / 10;
+		print(n/10);
+//		printf("%d\n", n % 10);
+	}
+	printf("%d\n", n % 10);
+
+	
+}
+int main()
+{
+	unsigned int n = 0;
+	scanf("%d", &n);
+	print(n);//传值，需要在函数内部打印；
+//	printf("%d\n", n % 10);
+	return 0;
